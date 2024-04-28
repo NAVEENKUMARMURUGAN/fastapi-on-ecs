@@ -10,3 +10,10 @@ variable "image" {
   description = "Image used to start the container. Should be in repository-url/image:tag format."
   type        = string
 }
+
+
+variable "bucket_name" {
+  description = "Image used to start the container. Should be in repository-url/image:tag format."
+  type        = string
+  default = "my-first-nk-tf-bucket"
+}

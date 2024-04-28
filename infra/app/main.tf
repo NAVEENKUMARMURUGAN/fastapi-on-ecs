@@ -13,6 +13,13 @@ module "network" {
   region   = var.region
 }
 
+module "s3" {
+  source   = "./s3"
+  app_name = var.app_name
+  bucket_name = var.bucket_name
+  region   = var.region
+}
+
 module "ecs" {
   source             = "./ecs"
   app_name           = var.app_name
